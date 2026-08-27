@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import index, CategoryListCreateView
+from .views import index, CategoryListCreateView, UnitListCreateView
 
 urlpatterns = [
     path("", index, name="master-index"),
@@ -8,4 +8,9 @@ urlpatterns = [
         CategoryListCreateView.as_view(),
         name="category-list",
     ),
+    path(
+        "units/",
+        UnitListCreateView.as_view(),
+        name="unit-list"
+    )
 ]
