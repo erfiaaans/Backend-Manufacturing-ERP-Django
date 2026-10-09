@@ -171,3 +171,4 @@ class Command(BaseCommand):
                     created_by=user,
                 )
         self.stdout.write(self.style.SUCCESS("\nInventory dummy data berhasil dibuat."))
+
